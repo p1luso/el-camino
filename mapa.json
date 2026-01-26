@@ -1,0 +1,152 @@
+{
+  "version": 8,
+  "name": "Estilo Cyber Neón (Base)",
+  "metadata": {
+    "mapbox:autocomposite": true
+  },
+  "sources": {
+    "mapbox": {
+      "type": "vector",
+      "url": "mapbox://mapbox.mapbox-streets-v8"
+    }
+  },
+  "sprite": "mapbox://sprites/mapbox/dark-v11",
+  "glyphs": "mapbox://fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#000000"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#FFFF00",
+        "fill-opacity": 0.15
+      }
+    },
+    {
+      "id": "admin-boundary",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "admin",
+      "filter": [
+        "all",
+        ["==", "disputed", 0],
+        ["==", "level", 0]
+      ],
+      "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "#FFC000",
+        "line-width": 1.5,
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "road-primary",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "filter": [
+        "all",
+        ["none", ["in", "brunnel", "tunnel", "bridge"]],
+        ["in", "class", "primary", "trunk"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFF00",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.5],
+            [18, 5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "road-secondary",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "filter": [
+        "all",
+        ["none", ["in", "brunnel", "tunnel", "bridge"]],
+        ["in", "class", "secondary", "tertiary"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFD700",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.4],
+            [18, 3]
+          ]
+        }
+      }
+    },
+    {
+      "id": "road-local",
+      "type": "line",
+      "source": "mapbox",
+      "source-layer": "road",
+      "filter": [
+        "all",
+        ["none", ["in", "brunnel", "tunnel", "bridge"]],
+        ["in", "class", "street", "motorway_link", "service", "residential", "path"]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFEE88",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [5, 0.2],
+            [18, 1.5]
+          ]
+        }
+      }
+    },
+    {
+      "id": "building-3d",
+      "type": "fill-extrusion",
+      "source": "mapbox",
+      "source-layer": "building",
+      "filter": [
+        "==",
+        "extrude",
+        "true"
+      ],
+      "paint": {
+        "fill-extrusion-color": "#333333",
+        "fill-extrusion-height": [
+          "get",
+          "height"
+        ],
+        "fill-extrusion-base": [
+          "get",
+          "min_height"
+        ],
+        "fill-extrusion-opacity": 0.9
+      }
+    }
+  ]
+}
