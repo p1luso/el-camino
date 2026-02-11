@@ -1,0 +1,23 @@
+# ninja log v5
+258	2494	7913942282162257	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9103360e7825e6e5
+61	2079	7913942277988414	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2ca488d3bcb99905
+46	1950	7913942276687999	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	5b75d796f106faeb
+93	1969	7913942276846950	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7890773298c60d29
+31	2104	7913942278230177	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	53f2a502e4d3adc6
+152	2251	7913942279715822	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a0cbc4342e01b5e8
+120	2579	7913942283010041	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	a090b7e3d2e928fe
+306	677	7913942264010237	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	76296e475ebf1091
+11	2729	7913942284453558	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c395e6c9b7cb828d
+2729	2950	7913942286729946	D:/el-camino/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t2m6535/obj/armeabi-v7a/libgame.so	522d5d3a4fb870e4
+678	1013	7913942267044259	D:/el-camino/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t2m6535/obj/armeabi-v7a/libswappywrapper.so	9bc9df1cb88bfc78
+214	967	7913962426613479	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	76296e475ebf1091
+968	1868	7913962434927646	D:/el-camino/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t2m6535/obj/armeabi-v7a/libswappywrapper.so	9bc9df1cb88bfc78
+71	6473	7913962481366308	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	5b75d796f106faeb
+111	6540	7913962482139658	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7890773298c60d29
+92	6644	7913962483348286	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2ca488d3bcb99905
+132	6735	7913962484296426	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a0cbc4342e01b5e8
+44	6830	7913962485307900	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	53f2a502e4d3adc6
+188	7122	7913962488226575	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9103360e7825e6e5
+156	7397	7913962491008603	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	a090b7e3d2e928fe
+16	7559	7913962492596258	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c395e6c9b7cb828d
+7559	7813	7913962495179558	D:/el-camino/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t2m6535/obj/armeabi-v7a/libgame.so	522d5d3a4fb870e4
